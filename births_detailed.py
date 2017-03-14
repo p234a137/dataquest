@@ -65,5 +65,17 @@ cdc_day_births = dow_births(cdc_list)
 pprint.pprint(cdc_day_births)
 # do year with the generalized function
 cdc_year_births = calc_counts(cdc_list, 0)
+print("cdc_year_births")
 pprint.pprint(cdc_year_births)
-
+#
+cdc_month_births = calc_counts(cdc_list, 1)
+print("cdc_month_births")
+pprint.pprint(cdc_month_births)
+#
+cdc_dom_births = calc_counts(cdc_list, 2)
+print("cdc_dom_births")
+pprint.pprint(cdc_dom_births)
+#
+cdc_dow_births = calc_counts(cdc_list, 3)
+print("cdc_dow_births")
+pprint.pprint(cdc_dow_births)
