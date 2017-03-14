@@ -51,6 +51,14 @@ def calc_counts(lol, column):
     return dict_births
 
 
+def calc_minmax(dikt):
+    """return min and max value for the input dictionary dikt"""
+    dmin = min(dikt.values())
+    dmax = max(dikt.values())
+    return (dmin, dmax)
+    
+
+
 #
 # pprint.pprint((read_csv("US_births_1994-2003_CDC_NCHS.csv"))[:10])
 cdc_list = read_csv("US_births_1994-2003_CDC_NCHS.csv")
@@ -79,3 +87,8 @@ pprint.pprint(cdc_dom_births)
 cdc_dow_births = calc_counts(cdc_list, 3)
 print("cdc_dow_births")
 pprint.pprint(cdc_dow_births)
+#
+print("min, max for cdc_year_births")
+print(calc_minmax(cdc_year_births))
+
+
